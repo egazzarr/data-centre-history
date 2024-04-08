@@ -1,0 +1,543 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-weight: lighter;
+    scroll-padding-top: 4rem;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    padding-top: 2%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    margin-right: 50px;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    font-style: none;
+} 
+
+.logo {
+    margin-right: auto;
+    flex-grow: 1; /* Fai espandere il logo per occupare lo spazio rimanente */
+    text-align: center; /* Allinea il logo al centro */
+    padding-left: 10%;
+}
+.logo h1 {
+    font-size: 13pt;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Per mantenere le proporzioni dell'immagine */
+}
+
+.logo img {
+    max-width: 20%;
+    height: auto; /* Per mantenere le proporzioni dell'immagine */
+}
+
+
+.work-container {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.left-box, .right-box {
+    scrollbar-width: none; /* Per Firefox */
+    -ms-overflow-style: none; /* Per Internet Explorer e Microsoft Edge */
+}
+
+.left-box::-webkit-scrollbar, .right-box::-webkit-scrollbar {
+    display: none; /* Per WebKit (Chrome, Safari, Opera) */
+}
+
+
+    
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(38, 1fr);
+    
+    margin-top: 20%;
+    }
+        
+.image {
+    position: relative;
+    overflow: hidden;
+ /* Imposta il padding-bottom per creare un formato quadrato */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene le proporzioni e ritaglia l'immagine per adattarla al formato quadrato */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+/* Video About */
+  
+  .contenitore {
+    position: relative;
+    height: 100vh; /* Utilizziamo viewport height (vh) per occupare l'intera altezza della finestra del browser */
+    overflow: hidden;
+  }
+  
+  .videofullscreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Posizioniamo il video dietro agli altri elementi */
+    filter: brightness(1.3) saturate(60%) blur(5px); /* Imposta la luminosità del video, il valore 1.5 aumenta la luminosità */
+  }
+  
+  .titolo {
+    position: absolute;
+    color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid;
+    border-radius: 25px;
+    padding: 20px;
+  }
+  
+  h1 {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    font-size: 9pt;
+    margin: 0; /* Rimuoviamo il margine predefinito per l'h1 */
+  }
+  
+  /* bottone */
+
+.custom-controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Imposta un valore di z-index superiore per sovrapporre al video */
+}
+
+#playButton {
+    padding: 10px;
+    font-size: 35px; /* Regola la dimensione dell'icona a tuo piacimento */
+    background-color: transparent; /* Imposta il colore di sfondo a trasparente */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Aggiungi una transizione per un effetto più fluido */
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    padding: 20px;
+    color: #000;
+}
+
+.landing-page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 16pt;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    color: #000000;
+}
+
+.content1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    padding-top: 5%;
+}
+.content2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+.content2 h1 {
+    font-size: 20pt;
+    letter-spacing: 5px;
+    color: hwb(0 0% 0%);
+}
+
+.content1 h1 {
+    font-size: 13pt;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    color: hsl(0, 0%, 0%);
+}
+.content1 h2 {
+    font-size: 11pt;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    color: hwb(226 0% 0%);
+}
+
+.content1 h3 {
+    font-size: 19pt;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    color: hwb(226 0% 0%);
+}
+
+.container {
+    display: flex;
+    margin: 10;
+    padding: 10;
+}
+
+.left-box {
+    flex: 1;
+    display: flex;
+    width: 60%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5px;
+    overflow-y: auto;
+    max-height: 65VH;
+}
+
+.left-box h2 {
+    font-size: 10px;
+    
+}
+
+.right-box {
+     /* Imposta una larghezza massima del 50% per la right-box */
+    
+     height: auto;
+     max-height: 65vh;
+     padding-bottom: 5px;
+     overflow-y: auto; /* Abilita lo scrolling verticale */
+     display: flex;
+     flex-direction: column;
+     padding-top: 5%;
+     width: 40%;
+     padding-right: 5%;
+     overflow-x: hidden;
+    
+}
+
+.right-box img {
+    max-width: auto;
+    max-height: auto;
+    padding-left: 7%;
+    /* Scala l'immagine per adattarla al contenitore */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+
+.right-box .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Due colonne */
+    grid-gap: 10px; /* Spazio tra le immagini */
+    width: 100%;
+
+}
+
+.right-box .grid-container img {
+    width: 92%; /* Occupa l'intera larghezza del contenitore */
+    height: auto; /* Mantieni le proporzioni */
+}
+.content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Separate left-box and right-box */
+    width: 100%; /* Ensure full width */
+}
+
+
+.table-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.column {
+  
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+.column:nth-child(1) {
+    width: 10%; /* Larghezza fissa di 300px per la quinta colonna */
+}
+.column:nth-child(2) {
+    width: 60%; /* Larghezza fissa di 300px per la quinta colonna */
+}
+.column:nth-child(3) {
+    width: 30%; /* Larghezza fissa di 300px per la quinta colonna */
+}
+
+.column h1 {
+    font-size: 14px; /* Adjust the font size of the heading */
+    margin-bottom: 5px; /* Add some margin below the heading */
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+}
+
+.year-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.year-name > div {
+    margin-bottom: 10px; /* Add consistent margin between year-name pairs */
+    font-size: 14px; /* Adjust the font size of the items */
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    height: 600px;  /* Imposta l'altezza fissa di 500px IMPORTANTEEE */
+}
+
+
+
+.clickable u:hover {
+    text-decoration: underline;
+}
+
+.text-box h3  a {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    font-weight: lighter;
+    font-size: 14pt;
+    color: #000;
+}
+
+/* Aggiungi stili CSS per la griglia dei social */
+.social { 
+    margin-top: 20px; /* Aggiungi un margine superiore per separare i social dal testo */
+    
+}
+
+
+.social1 h1 { 
+    margin-top: 20px; /* Aggiungi un margine superiore per separare i social dal testo */
+    margin-bottom: 20px;
+    margin-left: 5%; 
+    margin-right: 5%;
+    font-weight: lighter;
+    font-size: 14pt;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    color: #000dff;
+}
+
+.social1 h2 { 
+    margin-top: 20px; /* Aggiungi un margine superiore per separare i social dal testo */
+    margin-bottom: 20px;
+    margin-left: 5%; 
+    margin-right: 5%;
+    font-weight: lighter;
+    font-size: 12pt;
+    color: #000dff;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+}
+.social1 h3 { 
+    margin-top: 20px; /* Aggiungi un margine superiore per separare i social dal testo */
+    margin-bottom: 20px;
+    margin-left: 5%; 
+    margin-right: 5%;
+    font-weight: lighter;
+    font-size: 10pt;
+    color: #000;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+    
+}
+.social1 p { 
+    margin-top: 20px; /* Aggiungi un margine superiore per separare i social dal testo */
+    margin-bottom: 20px;
+    margin-left: 5%; 
+    margin-right: 5%;
+ 
+    font-size: 10pt;
+    color: #000;
+    }
+
+
+.social h3 {
+    margin: 0 ; /* Aggiungi spazio tra i social */
+    font-size: 14px; /* Imposta la dimensione dei nomi */
+    color: #000; /* Cambia il colore dei nomi */
+}
+
+.over {
+    position: absolute;
+    z-index: -1;
+}
+.over img {
+    z-index: -1;
+    height: 7%;
+    width: 7%;
+    padding-top: 2%;
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 780px) {
+    .container {
+        flex-direction: column;
+    }
+
+
+    .container {
+        display: block;
+    }
+
+    .toggle-icon {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .custom-controls {
+        display: none;
+    }
+    .text-box h2 {
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+        font-weight: lighter;
+        font-size: 7pt;
+        color: #000;
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+    .right-box {
+        display: none;
+        
+    }
+
+    .container .left-box {
+        width: 100%;
+        padding-right: 0;
+        max-height: 80vh;
+    }
+
+    .container .right-box {
+        width: 90%;
+        padding-right: 10;
+        max-height: 80vh;
+    }
+
+    #hide {
+        display: none; /* Nascondiamo la colonna References */
+    }
+    
+    .column:nth-child(1) {
+        width: 20%; /* Larghezza fissa di 300px per la quinta colonna */
+    }
+    .column:nth-child(2) {
+        width: 20%; /* Larghezza fissa di 300px per la quinta colonna */
+    }
+    .column:nth-child(3) {
+        width: 35%; /* Larghezza fissa di 300px per la quinta colonna */
+    }
+}
+
