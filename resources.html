@@ -76,18 +76,26 @@
 What would you say is an important quality in a software developer? 
 <br/>
 <i>
-    I think patience, and positive attitude. Problems are never solved with negativity and complaints. I come from a farmers’ family next to Clermont-Ferrand, not a very educated one. Since I was a kid, I have worked to earn some money, even when I was very young, picking mushrooms in the woods and selling them. I believe my success comes from my “gnac”, a French slang word that means “drive, motivation, never give up”. Always pursue new ideas that you believe are going to be interesting, take risks, and be happy when others disagree. Critical discussions usually pave the way for thoughts to thrive. I find it very beautiful that in Chinese, the word “crisis” also means “opportunity”. 
+I think patience, and positive attitude. Problems are never solved with negativity and complaints. I come from a farmers’ family next to Clermont-Ferrand, not a very educated one. Since I was a kid, I have worked to earn some money, even when I was very young, picking mushrooms in the woods and selling them. I believe my success comes from my “gnac”, a French slang word that means “drive, motivation, never give up”. Always pursue new ideas that you believe are going to be interesting, take risks, and be happy when others disagree. Critical discussions usually pave the way for thoughts to thrive. I find it very beautiful that in Chinese, the word “crisis” also means “opportunity”. 
 </i>
 <br/>
 You are known, among other things, to be the father of ROOT, the analysis software used by thousands of scientists at CERN still nowadays. Where did the name ROOT come from?
 <br/>
-<i>I am a countryside man and love nature, trees and squirrels. When I decided to write a new software for physics analyses, I decided I needed a quiet place. I asked for my office to be moved to the Prevessin campus and installed myself there; as I could see a magnificent big tree outside my office window in Prevessin, I decided to name it ROOT. 
+<i>I am a countryside man and love nature, trees and squirrels. The concept of trees and branches to describe physics data structures was already consolidated before the birth of ROOT. 
+    When I decided to write a new software for physics analyses, I asked for my office to be moved to the Prevessin campus in order to have some piece and quiet to develop this big, important project. 
+    When I saw trees and squirrels running on their branches outside my office window in Prevessin, I thought ROOT would be a perfect name for my baby software. I worked on it with Fons Rademakers, the son of the well-known film director. 
 </i>
 <br/>
 <i></i>
-In the 1970s, messages were sent through teletypes. What are they? 
+What are teletypes and what they were used for? Why were they so handy when we talk about technology evolution? 
 <br/>
-<i>Yes, teletypes stayed around until the late 70s and replaced the use of punched cards. When a message arrived, an alarm would go off in the Data Centre, saying that Rene Brun wanted to print some stuff. A line printer would then print a histogram, which would each take a whole page. 
+<i>In the 70s, physicists used to carry their code, punched on punched cards, to the computer centre where the supercomputers were, which provided the computational power to run analyses.
+    I still remember when a deck of punched cards got blown away by the wind, and we had to run through the vinyards to fetch the cards and reorder them all. 
+    In 1973, a few of us purchased a teletype, which was a machine that allowed to send the code to the Data Centre through a primordial screen. 
+    I would log in from my office - the process took around 10 minutes - and an alarm would go off in the Data Centre, activating my interactive session.  
+    The operator in the data centre would transfer the data from tape to disk, process it and get the results. A line printer would then print a histogram, which would each take a whole page. 
+    With the arrival of FALCO terminals in 1974, finally all users could submit jobs remotely. They only had text editors, not graphic terminals.
+    The first graphics terminals, instead, were the Tektronix, but the code was still running on the mainframe. 
 </i>
 <br/>
 And how long would it take to get the results?
@@ -98,15 +106,28 @@ I used to come to CERN from Clermont-Ferrand, where I did my PhD, during the wee
 <br/>
 You said you preferred hardware to software in the beginning. 
 <br/>
-<i>Yes, I always like to put hands on things, and was much more interested in developing chips and hardware. Actually, I hated computers and software, I didn’t understand them. However, in the 70s, due to the Yom Kippur War between Israel and Egypt, the American chips stopped being sent to CERN. I was supposed to work on them, but was left with nothing to do, so I started developing HBook. 
+<i>Yes, I always like to put hands on things, and was much more interested in developing chips and hardware. 
+    Actually, I hated computers and software, I didn’t understand them. 
+    However, in the 70s, due to the Yom Kippur War between Israel and Egypt, I was told that the American chips stopped being sent to CERN. I was supposed to work on them, but was left with nothing to do, so I started developing HBook. 
 </i><br/>
 What is HBook?
 <br/>
-<i>HBOOK was the first 2D histogram plotter, and was used, for example, to fit data from the ISR experiment. HPLOT instead was used to plot lines as well, and not only scatter plots, and ZBOOK for memory management. These are the user manuals we wrote, and one in Russian as I worked there for two years. At the time, 50% of CERN’s workforce was Russian. HBook and HPlot came before graphic terminals and they were used in batch. In the 80s, we decided to combine the ZBOOK package, which was evolving due to the electronic development done at the ISR experiment, with the old HYDRA bubble chamber software, and we called it ZEBRA. When I went to my supervisor’s office trying to pitch the idea to him, he did not like it, and told me: “If in 1 month you have not released ZEBRA, you are fired!”. We worked day and night, and we made it work. 
+<i>HBOOK was the first 1-D and 2-D histogram plotter that was enabling to plot, save and visualise the fitting of data from the ISR experiment. 
+    HPLOT instead was used to plot lines as well, and not only scatter plots, and ZBOOK for memory management. 
+    These are the user manuals we wrote, and one in Russian as I worked there for two years. 
+    At the time, 50% of CERN’s workforce was Russian. HBook and HPlot came before graphic terminals and they were used in batch. 
+    At the time of bubble chamber experiments, the HYDRA software developed by Julius Zoll, was used. With the evolution of technologies, the problem of saving data structures in memory without incurring into I/O problems became mor relevant; both ZBOOK, developed for the ISR, and HYDRA were dealing with this. 
+    However, when the director of computing announced that only ZBOOK was going to be used, I was upset as I didn't want any competition; Julius and myself decided to merge the software into a new package that we would call ZEBRA.
+    When I proposed this to the head of computing, he said I was shooting myself in the foot, and told me: “If in 1 month you have not released ZEBRA, you are fired!”. We worked day and night, and we made it work. 
+
 </i><br/>
-Amazing, this is a good example of how software and hardware development go hand in hand. With the arrival of graphics terminals and Apollo workstations, you also started developing PAW, and improved the collision geometry formalism with GEANT3. 
+Wow. With the arrival of graphics terminals and Apollo workstations, you also started developing PAW, and improved the collision geometry formalism with GEANT3. 
 <br/>
-<i>Yes, Apollo workstations were revolutionary as they allowed, for the first time, to visualise results on a screen. Moreover, they were the first example of a network of computers, on which you could run parallel computations, as they could be connected to each other. It is so obvious for us now, but it wasn’t at all at the time. Ben Segal and myself convinced the CERN finance department to purchase some Logitech mouses - also a new concept at the time - and stated that we needed some devices to make them work - the Apollo workstations themselves, which were so much more expensive! But they didn’t realise this, and bought some. PAW (Physics Analysis Workstation) was a data analysis system, whereas GEANT3 was the evolution from GEANT1 and GEANT2, a simulation software. With GEANT3, we were able to generalise the geometry of different particles colliding and decaying in the detector. 
+<i>Yes, Apollo workstations were revolutionary as they allowed, for the first time, to visualise results on the screen of the machine that was also running the analysis. 
+    Moreover, they were the first example of a network of computers, on which you could run parallel computations, as they could be connected to each other. It is so obvious for us now, but it wasn’t at all at the time. 
+    Ben Segal and myself convinced the CERN finance department to purchase some Logitech mouses - also a new concept at the time - and stated that we needed some devices to make them work - the Apollo workstations themselves, 
+    which were so much more expensive! But they didn’t realise this, and bought some. PAW (Physics Analysis Workstation) was a data analysis system, whereas GEANT3 was the evolution from GEANT1 and GEANT2, a simulation software. 
+    With GEANT3, we were able to generalise the geometry of different particles colliding and decaying in the detector. 
 </i><br/>
 How would you categorise particle physics software?
 <br/>
@@ -114,7 +135,10 @@ How would you categorise particle physics software?
 <br/>
 What is the difference between online and offline computing and how did they evolve? 
 <br/>
-<i>It is an important concept in HEP. Online analysis is performed at the time the data is taken and filters more tha 90% of data. The trigger itself can be considered a hardware implementation of the level-0 event selection. The offline analysis is done afterward, on the stored data. 
+<i>It is an important concept in HEP. 
+    Online analysis is performed at the time the data is taken and filters more tha 90% of data. 
+    The trigger itself can be considered a hardware implementation of the level-0 event selection. 
+    The offline analysis is done afterward, on the stored data. 
 </i><br/>
 When did objective programming come about?
 <br/>
@@ -135,11 +159,18 @@ And you developed them with CPUs.
 </i><br/>
 Other curiosities? 
 <br/>
-<i>I used to travel to the US a lot, due to the Superconducting Super Collider (SSC) project in Waxahachie, Texas. SSC's planned collision energy of 2 x 20 = 40 TeV around a 87 km ring was roughly three times that of the 2 x 6.8 = 13.6 TeV around the 27 km ring of the LEP (same tunnel and dimension of today’s LHC). However, in 1993 after 2 billion dollars had already been spent on it, the American government decided to stop the SSC project. One of the reasons why the Americans abandoned the project was that engineers at LEP (the CERN experiment at the time) found out that the Moon tidal force was moving the magnets of the accelerators by 1 mm. The problem was solved by placing a tunnel crossing the LEP circumference to send very fast signals from one part to the other. The Americans realised this would have been too complicated and expensive. 
+<i>I used to travel to the US a lot, due to the Superconducting Super Collider (SSC) project in Waxahachie, Texas. 
+    SSC's planned collision energy of 2 x 20 = 40 TeV around a 87 km ring was roughly three times that of the 2 x 6.8 = 13.6 TeV around the 27 km ring of the LEP (same tunnel and dimension of today’s LHC). 
+    However, in 1993 after 2 billion dollars had already been spent on it, the American government decided to stop the SSC project. One of the several reasons why the Americans abandoned the project - most of them being economical reasons - 
+    was that engineers at LEP (the CERN experiment at the time)
+     found out that the Moon tidal force was moving the magnets of the accelerators by 1 mm. 
+     The problem was solved by placing a tunnel crossing the LEP circumference to send very fast signals from one part to the other. The Americans realised this would have been too complicated and expensive. 
 </i><br/><br/>
  <i>09.04.2024</i>
         </h3>
         </div>
+
+
 
     <div class="social1">
         <h1>Interview with Ben Segal</h1>
@@ -230,4 +261,3 @@ Other curiosities?
 
 </body>
 </html
-
