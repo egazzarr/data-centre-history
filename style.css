@@ -16,6 +16,7 @@ nav {
     z-index: 1000;
     top: 0;
     padding-top: 2%;
+    padding-bottom: 5%;
 }
 
 ul {
@@ -307,7 +308,7 @@ img {
     
      height: auto;
      max-height: 65vh;
-     padding-bottom: 5px;
+     padding-bottom: 10px;
      overflow-y: auto; /* Abilita lo scrolling verticale */
      display: flex;
      flex-direction: column;

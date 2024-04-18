@@ -54,6 +54,9 @@
                         <!-- cray -->
                         <div><p>1980s</p></div>
                         <!-- emulator -->
+                        <div><p>1980s</p></div>
+                        <!-- minicomputer -->
+
                         <div><p>1971-2024</p></div> 
                         <!-- processors -->  
                         <div><p>1980s</p></div>
@@ -85,8 +88,8 @@
                         <div class="clickable" data-image="images/computing/wk.jpg">
                             <a href="#"><p><u>Willem Klein</u></p></a>
                             <p>
-                                Before computers, CERN hired the Dutch prodigee mathematician as a human calculator. 
-                                He was fster than the first analogue calculators at the time, and was getting tired extremely quickly. 
+                                Before computers, CERN hired the Dutch prodigey mathematician as a human calculator. 
+                                He was faster than the first analogue calculators at the time, but was getting tired extremely quickly. 
                                 On 27 August 1976, Klein calculated the 73rd root of a 500-digit number in 2 minutes and 43 seconds, winning a place in the Guinness Book of Records.
                                 He was unfortunately stabbed to death in his apartment by an unidentified individual.
                                 <!-- https://cds.cern.ch/record/1728889/files/vol7-issue9-p173-e.pdf -->
@@ -97,22 +100,20 @@
                             <a href="#"><p><u>Mainframe computers - Ferranti Mercury</u></p></a>
                             <p>
                                 The first CERN computer, which was filling a whole room, took 2 years to build and 3 months to install. 
-                                It was one million times slower than today's large computers and it costed 1 million Swiss Francs of the time. 
-                                The Ferranti Mercury works on the principle of vacuum tubes, ampoules with an anode (positive) and a cathode (negative). 
+                                It was one million times slower than today's large computers and it cost 1 million Swiss Francs of the time. 
+                                The Ferranti Mercury worked on the principle of vacuum tubes, ampoules with an anode (positive) and a cathode (negative). 
                                 When powered with current, heat makes electron flow from anode to cathode, carrying and amplifying the signals through a gate in the middle (anode, cathode and gate contitute what was called a triode).  
                                
                                 <!-- The first vacuum tubes computer was designed in 1926 in Germany with the purpose of tax avoidance; in fact, 
                                 radio receivers had a tax that was levied depending on how many tube holders a radio receiver had. This solution allowed 
                                 radio receivers to have a single tube holder. -->
-                            </br>
-                                Curiosity: a fervent supporter of CERN, Heisenberg became the first Chairman of the Laboratory's Scientific Directives Committee in October 1954, even before CERN purchased the first computer. 
                             </p>
                         </div>
 
                         <div class="clickable" data-image="images/computing/ibm360.jpg , images/computing/ibm790onair.jpg, images/computing/ibm3090.jpg, images/computing/DSCF8729.jpg ,images/computing/DSCF8733.jpg ,images/computing/DSCF8736.jpg, images/computing/tcm.png, images/computing/ibmscan.jpg,  images/computing/scanning.jpg, images/computing/bebc1.jpg, images/computing/bebc2.jpg, images/computing/bubbles.jpg,  images/computing/ibm709.jpg, ">
                             <a href="#"><p><u>Mainframe computers - IBM</u></p></a>
                             <p>
-                                Until the 90s, most of the  Data Centre was filled with one large mainframe computer, which was in charge of running all of the physics and engineering workloads of CERN. 
+                                Until the 90s, most of the  Data Centre was filled with a few large mainframe computers, which was in charge of running all of the physics and engineering workloads of CERN. 
                                 CERN was a desirable client for early supercomputer companies such as IBM and CRAY, and therefore was always getting the latest machines at competitive prices. 
 
                                 Still, the mainframes were very expensive: around $5 millions for one of them. 
@@ -150,7 +151,7 @@
                                 - larger mini's and control computers (PDP11/45, HP4100, Nord-10, IBM1800, Modular One, Ferranti Argus 500) 
                                 - medium sized computers (PDP-10, IBM-360/44, CII 10070 and CDC 3200)
                                 - large computers (CDC 6600, CDC 7600).
-                                Computing becomes more heterogeneous. 
+                                Computing became highly heterogeneous - and that was a problem. 
                                 <!-- https://cds.cern.ch/record/1767657
                                 https://cds.cern.ch/record/969350
                                 https://videos.cern.ch/record/43172 
@@ -168,7 +169,12 @@
                         <div class="clickable" data-image="images/computing/DSCF8536.jpg, images/computing/DSCF8534.jpg ,images/computing/DSCF8533.jpg, images/computing/amdahl.jpg">
                             <a href="#"><p><u>Amdahl 470 - air cooling</u></p></a>
                         <p>
-                            Amdahl, an IBM competitor, invented an air cooling technology for its computers, which ran the popular IBM System/360 family of programs, but was faster and less expensive. 
+                            In 1967, computer scientist Gene Amdahl gave a talk at a conference showing how the performance improvement from parallel processing for a sequence of operations was limited. 
+Even if certain operations could be sped-up by being performed in parallel, other operations that could not, such as reading or writing data, would limit how 
+fast the system could be improved. Today, the law is used a lot in parallel computing. 
+It states tht "the overall performance improvement gained by optimizing a single part of a system is limited by the fraction of time that the improved part is actually used". 
+
+Amdahl, an IBM competitor, invented an air cooling technology for its computers, which ran the popular IBM System/360 family of programs, but was faster and less expensive. 
                             This object contains an actual Amdahl series 470 computer logic chip with an air cooling device mounted on top. 
                             The package leads and cooling tower are gold-plated.
                             </p>
@@ -192,7 +198,7 @@
                             The CRAY supercomputer was used in the film "Sneakers", featuring Robert Redford. </p>
                         </div>
 
-                        <div class="clickable" data-image="images/computing/DSCF8603.jpg ,images/computing/DSCF8606.jpg ,images/computing/DSCF8607.jpg ,images/computing/DSCF8613.jpg">
+                        <div class="clickable" data-image="images/computing/emulator.jpg , images/computing/DSCF8603.jpg ,images/computing/DSCF8606.jpg ,images/computing/DSCF8607.jpg ,images/computing/DSCF8613.jpg">
                             <a href="#"><p><u>Emulators</u></p></a>
                         <p>
                             Mainframe computers were expensive (from $2 to $5 million at the time), so many engineers designed home-made integrated circuits to make them more performant than microprocessors on the market. 
@@ -203,6 +209,27 @@
                             Each transistor carries one bit of information.
                             </p>
                         </div>
+                        <!-- http://cds.cern.ch/record/1831923 -->
+
+                        <div class="clickable" data-image="images\computing\wire_chamber.png">
+                            <a href="#"><p><u>Micro-computers</u></p></a>
+                        <p>
+Charpak's multi-wire proportional chamber (Nobel prize physics 1992) for the UA1 experiment
+was a gas-filled box with a large number of parallel detector wires, 
+each connected to individual transistor amplifiers. 
+Linked to a computer, Charpak’s chamber could achieve a counting rate a thousand 
+times better than existing detectors, which took pictures of events. 
+Digital signals of protons and antiprotons collisions (decaying into W and Z bosons) 
+were produced every 22 microseconds, in real time. This was a revolution!
+The 168/E emulator would store the images in memory, and the SUPER CAVIAR was reading them. 
+The Super CAVIAR was built by S.Cittolin and B. G. Taylor with a 8-bit Motorola 6800 microprocessor 
+and is a first example of modern personal computers. 
+With the appearance of coloured screens in the 70s, it was possible to see the collision on the screen!
+                            </p>
+                        </div>
+                        <!-- https://cds.cern.ch/record/134523/files/CM-P00061326.pdf
+                        https://videos.cern.ch/record/1063075, minute 7.41 screen of display. 
+                        1973:  video tape recording: https://cds.cern.ch/record/880656?ln=de  -->
 
                         <div class="clickable" data-image="images/computing/amd1.jpg ,images/computing/amd2.jpg ,images/computing/amd3.jpg ,images/computing/DSCF8723.jpg ,images/computing/DSCF8726.jpg ,images/computing/intel1.jpg ,images/computing/intel2.jpg ,images/computing/DSCF8550.jpg ,images/computing/DSCF8551.jpg ,images/computing/DSCF8552.jpg ,images/computing/DSCF8553.jpg">
                             <a href="#"><p><u>Microprocessors</u></p></a>
@@ -225,6 +252,7 @@
                         <p>
                             The first commercially available 32-bit computer, manufactured by Digital Equipment Corporation (DEC). The name "VAX" comes from an acronym for "Virtual address eXtension" as the successor to the PDP-11.
                             The mini-computers were the first to allow <a href="http://cds.cern.ch/record/862913?ln=e">online computing</a> in the control rooms of experiments, digitalisig the signals while they were taken. 
+                            One component of the trigger was equivalent to a TV: so at the data aquisition moment, it was like using 5 million TVs in series, a crazy concept at the time!
                             An important technological invention that revolutionised the way we interact with computers appeared in experiments' control rooms at the time of the first mini-computers, the Norsk-Data, in 1973: the first touch screen, 
                             invented by Ben Strumpe (you can see him in his office in the images). The big rolling black ball is a primordial mouse. 
                             <!-- https://cds.cern.ch/record/1763521 -->
@@ -330,11 +358,11 @@
 
                   
                     <div class="year-name">
-                        <div><p>Pier Giorgio Inocenti and Adolfo Fucci. W.K. was faster than the Ferranti Mercury, but he was getting tired easily and drank a lot. 
+                        <div><p>Pier Giorgio Inocenti and Adolfo Fucci. W.K. was faster than the Ferranti Mercury, but he was getting tired easily and drank a lot - was often found in the St. Genis pub. 
                             As a 1st April joke, operators brought CERN's Director General in front of the Ferranti, and told him that he could ask the supercomputer any question in any language, and the computer would understand and spit out a result. 
                             W.K. was hiding behind the supercomputer wooden board and had access to controls. He also spoke 14 languages, so the trick was easily done.  </p></div>
                         <div><p>Pier Giorgio Innocenti. 
-                            The Ferranti Mercury had several thousands valves - every day, some of them broke and needed to be changed every day by an operator. 
+                            The Ferranti Mercury had several thousand vacuum tubes - every day, some of them broke and needed to be changed by an operator. 
                             F. Hemmer on the first computer contract. 
                         The main question is: why did CERN need a computer? It was initially just to scan the bubble chamber pictures. </p></div>
                         <div><p>Adolfo Fucci on the differences between IBM and CDC computers. The IBM, being a German design, had very detailed instructions and was "very" easy to reproduce, while the
@@ -347,7 +375,7 @@
                             The operators would queue the punch cards on the mainframe supercomputer, manually install the tapes, and the analyses would run. 
                             Bubble chambers are tanks of unstable (superheated) transparent liquid, sensitive to the passage of charged particles through it. 
                             As they force their way through the liquid, charged particles ionise the atoms in the liquid and they make it boil, leaving bubbling traces. 
-                            Ben Segal explains how Carlo Rubia used to arrive at the operators' window angry and in a rush to have priority on the punch cards queues. 
+                            Ben Segal explains how Carlo Rubbia used to arrive at the operators' window angry and in a rush to have priority on the punch cards queues. 
                             Pier Giorgio Innocenti explains how the scientists would bike with magnetic tapes to run the analyses.
                         He also explains that the CDC had transistors, and what they are. </p></div>
                         <div><p>Adolfo Fucci on air cooling</p></div>
@@ -355,9 +383,12 @@
                            Miguel Marquina on how beautiful the design of the CRAY was. </p></div>
 
                         <div><p>A Fucci and Mick Storr on emulators </p></div>
+                        <div><p>Sergio Cittolin</p></div>
                         <div><p>Pier Giorgio Innocenti telling the history of microprocessors, and how they revolutionised the world of computing. Markus Schulz ?</p></div>
-                        <div><p>Sergio Cittolin explaining that the first examples of online computing arrived with the mini-computers, which were set up for the Split Field Magnet spectrometer on the CERN Intersecting Storage Rings.
-                            Sergio cittolin built the first 8-bit PC. 
+                        <div><p>P. G. Innocenti explaining that the first examples of online computing arrived with the PDP-11 mini-computers. 
+                            S. Cittolin: when planning the required power for the LHC, in the beginning the requirement of 10 TFLOPs CPU power seemed unimaginable. 
+                            However, when the film Titanic came out in 1996, it was made public that CPU power of 5 TFLOPs was used for the visual effects: it was therefore possible to achieve such power, there was hope. 
+
                         </p></div>
                        
                         <div><p>Marcus Schulz on diodes, ROM, RAM kinds and transistors. 
@@ -383,7 +414,7 @@
                             Miguel Marquina: all machines, before Linux was adapted to all computers, has proprietary UNIX operating systems.
                             With SHIFT, operators were replaced by operating systems. It is important to make sure that software behaves in the same way on each different OS. 
                             The OS distributed workloads on the different UNIX boxes. The OS is like the brain, the PC boxes are like the limbs that execute commands by the OS. 
-                            
+
                         </p></div>
                         <div><p>Frederic Hemmer: VMs exist since a long time!</p></div>
                         <div><p>Dirk Duellmann on the transition to PC farms.</p></div>
@@ -408,3 +439,7 @@
     </div>
 </body>
 </html>
+
+
+<!-- Curiosity: a fervent supporter of CERN, Heisenberg became the first Chairman of the Laboratory's Scientific Directives Committee in October 1954, even before CERN purchased the first computer.  -->
+
