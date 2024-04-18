@@ -47,8 +47,6 @@
                         <div><p>1971-1981</p></div>
                         <div><p>1972</p></div>
                         <div><p>1976</p></div>
-                        
-
                         <div><p>1978-83</p></div>
                         <div><p>1983</p></div>
                         <div><p>1983</p></div>
@@ -82,13 +80,11 @@
                         <div class="clickable" data-image="images/networking/omnet.png">
                             <a href="#"><p><u>FOCUS</u></p></a>
                         <p>   The first time computers were made to communicate through 2 Mbit/s twisted pair serial lines via a smaller
-CDC machine. Physicists could manage their files remotely, execute batch jobs on the
+CDC machine. FOCUS was a data link - still not a network - through which physicists could manage their files remotely, execute batch jobs on the
 mainframes, and retrieve their results. 
                             <!-- https://cds.cern.ch/record/2312572/files/9789814749145_0009.pdf , p 341 -->
                         </p>
                         </div>
-
-
 
                         <div class="clickable" data-image="images/networking/omnet.png">
                             <a href="#"><p><u>OMNET</u></p></a>
@@ -102,10 +98,16 @@ mainframes, and retrieve their results.
                             <a href="#"><p><u>Gandalf terminal switch, MODCOMP</u></p></a>
                         <p>   
                             
-                        The Gandalf switch had a modem in it. It allowed to switch on the terminal network from one computer port to another. 
-                        You ould therefore connect your terminal to the computer you desired to connect to. 
-                        Modems were used to encode and decode (analogue to digital) signals over telephone lines. 
-                        These were produced by Gandaf, a Canadian company that went bankrupt. 
+                            The <a href="http://cds.cern.ch/record/154248/files/198504337.pdf">INDEX system</a> was a large switched terminal network: switches like these 
+                            enabled connecting a dumb terminal with a computer port. 
+                        The decimal switches you can see served to decide which computer you wanted to connect to.
+                        
+                        This switch had a modem inside, a system to encode and decode (analogue to digital) signals over copper telephone lines.
+                        These were produced by Gandaf, a Canadian company that ran out of business with the arival of Ethernet technologies. 
+                        On the side, you can see more modern examples (1990s, 2000s) of modems, used to connect a computer to the internet via telephone lines. 
+
+                        With the advancement of technologies, modems have become small chips that fit within your smartphone. 
+                        
                         
 
                         </p>
@@ -116,8 +118,12 @@ mainframes, and retrieve their results.
                             <a href="#"><p><u>CERNET</u></p></a>
                         <p>   
                             CERN decided to create its own internal network, one of the world's fastest networks. 
-                            This is 15 datalinks of a CERNET node. Each data link transfers data full duplex at 2.5Mbit/s. 
-                            Once fully deployed, CERNET interconnected the central IBM and CDC mainframes and over 100 mini-computers.
+                            This is a home-made (like most avant-garde technologies at the time) interface with 15 data links to a CERNET switching node, a Modcomp computer, used for packet switching. 
+                            Each end system had a data link coming in to the Modcomp. 
+                            Each data link transfers data full duplex at 2.5Mbit/s. 
+                            Once fully deployed, CERNET interconnected the central IBM and CDC mainframes to switching node computers, the Modcomp Classics (represented by the small squares in the map, 1980). 
+                            There were then connected to over 100 mini-computers (represented by the small dots).
+                        The data was travelling through thick twisted pair cables for a maximum of 1 km, after which it was lost as the resistance in the wires, made of copper, was too strong. 
                             All the CERNET protocols were developed independently, so it was hard to scale the data transfers.
                             The CERNET management cards, or interface cards, were built at CERN and since there was a lot of space on them, people printed their faces and poems on them. 
                             
@@ -131,15 +137,12 @@ mainframes, and retrieve their results.
                             Speaks of waterloo</i>
                         </br>
                         The recording, on magnetic tape, of raw data generated by physics experiments was still done on minicomputers local to the experiment. 
+                        
                         The first CERNET user was the European Muon Collaboration experiment NA2, which used CERNET regularly from March 1978 to process data on the IBM 370 mainframe. 
-                        In the map, from 1980, each small dot represents a user mini-computer, usually in an experimental hall or development laboratory, connected by a
-                        thick data link to a CERNET node computer. Each small square represents a
-                        pair of node computers, which are Modcomp Classics. The inter-node connections are represented by the thicker lines, which
-                        represent two or more data-links, coming out of the Data Centre.  
-                        The data was travelling through thick twisted pair cables for a maximum of 1 km, after which it was lost as the resistance in the wires, made of copper, was too strong. 
                         
 
                             <!-- https://cds.cern.ch/record/1828354  -->
+                            <!-- http://cds.cern.ch/record/879330?ln=en -->
                             <!-- https://cds.cern.ch/record/1738001/files/vol22-issue5-p186-f.pdf -->
     
                         </p>
@@ -174,15 +177,21 @@ mainframes, and retrieve their results.
                       
 
                         Ethernet arrived at CERN in 1983 to avoid satellite data collision transfers and it is still widely used nowadays. 
+
                         It is a computer networking technology developed in XEROX Parc in Palo Alto (CA, US). 
                         It allows to link devices together by running cables in a local area network (LANs) or wide area network (WANs).
-                       
- 
-                        <b>IP/TCP protocol</b>, invented in 1973 by Vint Cerf and Bob Kahn to replace ARPANET's Network Control Protocol (NCP) was designed to be the go-to protocol to transfer information over th einternet. 
+                        
+                        <b>IP/TCP protocol</b>, invented in 1973 by Vint Cerf and Bob Kahn to replace ARPANET's Network Control Protocol (NCP) was designed to be the go-to protocol to transfer information over the internet. 
 
                         </br>
                         TCP/IP enabled the integration of various networks into a global network of networks, while before each university/institute used their own internet protocol. 
                         The TCP/IP protocol suite also facilitated the development of other protocols and applications that run on top of it, such as the Domain Name System (DNS), the Hypertext Transfer Protocol (HTTP), and the Simple Mail Transfer Protocol (SMTP). 
+                        In general, four layers constitute an internet technology: 
+                        the physical layer (Ethernet or token ring), 
+                        the network layer (IP), 
+                        the correction layer (TCP) and the application layer. 
+                        The network and correction layers are the most critical ones, as the hour glass analogy represents.  
+ 
                         </br>
                         Before routing boxes, internet routing was slow as it was done done in some of the host computers themselves, and not on dedicated devices. 
                         The idea of having a dedicated box for IP routing (initially used to connect geographically disparate computers over a multiprotocol network system) was extremely new.
@@ -203,6 +212,10 @@ mainframes, and retrieve their results.
                         could only travel a maximum of 1 km. The faster information flowed, the shorter the distance it could travel. 
                         Computers were attached via these vampire taps (each around 100 CHF), connectors screwed straight through the shielding of the cable; when somebody needed to conect to the internet, 
                         they would open the "tap" and serve themselves.
+                        The initial Ethernet technolgy was CSMA/CD, based on satellite protocols: all signals compete for the same satellite line. This is where the name "ethernet" comes from, as you were initialy transmitting the signal through the "ether", an arcaic word to describe the rarefied air in space. 
+                        It then evolved from using coaxial cables to telephone cables to twisted pair to fibre optics cables. 
+                        <!-- You transmit the signal, if you detect no collision you keep transmitting. 
+                        If instead you sense that the resource is occupied, you back off randomly and you re-transmit.  -->
                         </p>
                         </div>
 
@@ -260,6 +273,7 @@ mainframes, and retrieve their results.
                             The first service of the Worldwide LHC Computing Grid (WLCG), called LCG-1 was opened in 2003, with 25 sites worldwide; it was , to .
                             set up to share LHC resources for physics analyses across the world, both in terms of storage and computing resources to spread analysis calucaltions 
                             over various computing nodes. 
+                            It was also built to dilute the cost of computing, which was becoming consederably high with the preparation of the first LHC run. 
                             WLCG combines about 1.4 million computer cores and 1.5 exabytes of storage from over 170 sites in 42 countries. 
                             This massive distributed computing infrastructure provides more than 12 000 physicists around the world with near real-time access to LHC data, 
                             and the power to process it.
@@ -293,7 +307,8 @@ mainframes, and retrieve their results.
                             P. G. Innocenti on the computer network between mini-copmuters to control and measure every SPS accelerator function. 
                             A Message Hanling Computer was placed in the middle of a network of PDP11. 
                             The software had commands that were predecessors of the Remote Procedure Calls, a communication system between a client and a server. 
-                            What is packet switching?
+                            James Gillies on what packet switching is, and how it was invented in the US by Baran and in the UK by Davies at the same time and for different purposes. 
+                            
                            </p></div>
                            <div><p>
                             Ben talks about modems. </p></div>
