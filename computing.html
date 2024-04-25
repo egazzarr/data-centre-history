@@ -121,6 +121,11 @@
                                 CERN hired around 2000 young women - the scanning girls - whose job was to scan the bubble chambers' pictures and get the coordinates of particles' traces by hand.  
                                 Many physicists and engineers ended up marrying them. 
 
+                                Already in 1964, the spark chambers (stacks of metal plates placed in a sealed box filled with a gas such as helium or neon to detect
+                                charged particles from cosmic rays, which ionise the gas between the plates creating a sparkle) experiments were using IBMs to analyse the data from 
+                                cosmic rays. 
+
+
                                 The most powerful IBM mainframe CERN had was the IBM 3090 (1985 - 1996). 
                                 Here you can see a water-cooled Thermal Conduction Module (TCM) was used on the mainframes. It is made of ceramics, which is geometrically stable and can be fine-tuned to the temperature, 
                                 but at the same time very hard to produce and therefore extremely expensive. 
@@ -211,25 +216,57 @@ Amdahl, an IBM competitor, invented an air cooling technology for its computers,
                         </div>
                         <!-- http://cds.cern.ch/record/1831923 -->
 
-                        <div class="clickable" data-image="images\computing\wire_chamber.png, images\computing\caviar.jpg">
+                        <div class="clickable" data-image="images\computing\supercaviar.jpg, images\computing\track-ua1.png , images\computing\sueprcaviar5.jpg , images\computing\supercaviar1.jpg , images\computing\supercaviar2.jpg , images\computing\supercaviar3.jpg , images\computing\supercaviar4.jpg , images\computing\sc1.jpg , images\computing\sc2.jpg , images\computing\sc3.jpg">
                             <a href="#"><p><u>Micro-computers</u></p></a>
                         <p>
-Charpak's multi-wire proportional chamber (Nobel prize physics 1992) for the UA1 experiment
-was a gas-filled box with a large number of parallel detector wires, 
+
+
+<!-- I rivelatori solid state sono cominciati con strips di Si (Kemmer 1980), (Heijne 1980), silicon drift chambers (Gatti&Rehak 1984), poi con pixels di Si (autori vari RD19 1988-1999) e MAPS Monolitic Acive Pixel Sensors. -->
+
+
+Charpak's multi-wire proportional chambers (Nobel prize physics 1992) appeared in 1968 already. 
+It was a gas-filled box with a large number of parallel detector wires, 
 each connected to individual transistor amplifiers. 
 Linked to a computer, Charpak’s chamber could achieve a counting rate a thousand 
-times better than existing detectors, which took pictures of events. 
+times better than existing detectors, which previously took pictures of events. 
 Digital signals of protons and antiprotons collisions (decaying into W and Z bosons) 
 were produced every 22 microseconds, in real time. This was a revolution!
-The 168/E emulator would store the images in memory, and the SUPER CAVIAR was reading them. 
+In 1973, the Split Field Magnet (SFM) - the largest spectrometer for particles from beam-beam collisions in the ISR - 
+already had 50 000 wires to amplify signals. 
+ 
+The development of <b>digital signal amplification</b> continued with drift chambers (Walenta 1971), employed in the UA1 experiment. 
+A drift chamber is a device in which electrons
+liberated in a medium by ionizing collisions can be
+moved away from their initial position by appropriate electric fields.
+By this time, data digitalisation has become a standard, microprocessor and data network technologies are being built and 
+the IBM emulators allow to analyse and select the events in real time. 
+
+<!-- https://www.kfki.hu/~gbencedi/cikkek/science-13.pdf -->
+
+<!-- Signal amplification then continued as well with Time Projection Chambers (Nygren 1974/75)
+and the GEM and Micromega experiments.  -->
+
+The 168/E emulator would store the images in memory, and the SUPER CAVIAR micro-computer was reading them. 
 The Super CAVIAR was built by S.Cittolin and B. G. Taylor with a 8-bit Motorola 6800 microprocessor 
 and is a first example of modern personal computers. 
-With the appearance of coloured screens in the 70s, it was possible to see the collision on the screen!
+With the appearance of coloured screens in the 70s, it was possible to see the collision on the screen. 
+The online event display was a powerful monitor tool. 
+<!-- 
+- Front-end full data digitalisation.
+flash ADC and TDC for pulse shape and time digitalisation (CTD), ReadOut Processor (ROP) and programmable logic
+- Apparatus programmable controls and monitor.
+Extensive use of 
+(CAVIAR microcomputer, CAMAC, MacVEE, ADLC and VME industry standards)
+- Real time data analysis and event selection.
+Online Introduction of IBM emulators (first online farm) -->
+
                             </p>
                         </div>
                         <!-- https://cds.cern.ch/record/134523/files/CM-P00061326.pdf
                         https://videos.cern.ch/record/1063075, minute 7.41 screen of display. 
                         1973:  video tape recording: https://cds.cern.ch/record/880656?ln=de  -->
+
+                        <!-- https://cds.cern.ch/record/18303/?ln=en -->
 
                         <div class="clickable" data-image="images/computing/amd1.jpg ,images/computing/amd2.jpg ,images/computing/amd3.jpg ,images/computing/DSCF8723.jpg ,images/computing/DSCF8726.jpg ,images/computing/intel1.jpg ,images/computing/intel2.jpg ,images/computing/DSCF8550.jpg ,images/computing/DSCF8551.jpg ,images/computing/DSCF8552.jpg ,images/computing/DSCF8553.jpg">
                             <a href="#"><p><u>Microprocessors</u></p></a>
@@ -367,7 +404,7 @@ With the appearance of coloured screens in the 70s, it was possible to see the c
                         The main question is: why did CERN need a computer? It was initially just to scan the bubble chamber pictures. </p></div>
                         <div><p>Adolfo Fucci on the differences between IBM and CDC computers. The IBM, being a German design, had very detailed instructions and was "very" easy to reproduce, while the
                              CDC was designed by Seymour Cray and it was a mess to understand, as Cray wanted to do everything by himself!
-
+Innocenti on when he worked at SLAC with the IBM 1800 DAQ for spark chambers experiment. 
                         </p></div>
                         <div><p>Tor Bloch? Adolfo Fucci? 
                             The physics data journey was the following: at the experiments' site, the physics data was digitalised and recorded on magnetic tapes.  
