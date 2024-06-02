@@ -76,6 +76,7 @@
                             <a href="#"><p><u>Teletype</u></p></a>
                         <p>   
                             Teletypes were used until the 70s to send messages to the Data Centre. 
+                            When a message arrived, an alarm would go off and the line printer would print a histogram, which took a whole page. 
                             Data was still punched on paper tapes, but teletypes were used as a replacement for punched cards, and therefore a more sustainable solution. 
                         </p>
                         </div>
@@ -94,8 +95,8 @@ mainframes, and retrieve their results.
                             10 RIOS (Remote Input Output Stations) were installed around CERN, some with operators
  They emulated CDC’s UT200 Remote Job Entry terminal - but much cheaper and faster. 
  They used a UK mini-computer (a CTL Modular One). It was the CERN’s choices of Card Reader and Line Printer. 
- The only memory was 16 Kbytes of RAM, no disk or tape !!
- Code was in Assembler language. 
+ The only memory was 16 Kbytes of RAM, no disk or tape. 
+ Ben Segal was able to emulate a human operator - using space gleaned from poor original code, which was in Assembler language. 
                         </p>
                         </div>
 
@@ -104,6 +105,12 @@ mainframes, and retrieve their results.
                             <a href="#"><p><u>OMNET</u></p></a>
                         <p>   
                             A first example of home-grown high speed data communications network (CERN’s first packet switched network) designed for PDP-11 computers to support the Omega spectrometer experiment. 
+                            
+                            A Message Hanling Computer was placed in the middle of a star network of Norsk Data NORD-10 computers. 
+                            The software had commands that were predecessors of the Remote Procedure Calls, a communication system between a client and a server. 
+                            It was the frst example of packet switching technology at CERN. Packet switching was invented in the US by Baran and in the UK by Davies at the same time and for different purposes. 
+                            
+
                             <!-- http://cds.cern.ch/record/133479/files/CERN-79-11.pdf -->
                         </p>
                         </div>
@@ -134,7 +141,7 @@ mainframes, and retrieve their results.
                             CERN decided to create its own internal network, one of the world's fastest networks. 
                             This is a home-made (like most avant-garde technologies at the time) interface with 15 data links to a CERNET switching node, a Modcomp computer, used for packet switching. 
                             Each end system had a data link coming in to the Modcomp. 
-                            Each data link transfers data full duplex at 2.5Mbit/s. 
+                            Each data link transfers data full duplex at 2.5Mbit/s, and it was connected to a PDP11 mini-computer. 
                             Once fully deployed, CERNET interconnected the central IBM and CDC mainframes to switching node computers, the Modcomp Classics (represented by the small squares in the map, 1980). 
                             There were then connected to over 100 mini-computers (represented by the small dots).
                         The data was travelling through thick twisted pair cables for a maximum of 1 km, after which it was lost as the resistance in the wires, made of copper, was too strong. 
@@ -173,8 +180,14 @@ mainframes, and retrieve their results.
                             Private customers were only allowed to receive data, while experiments sent data to users. The transfer of data was dependent on operators at the receiving endpoint, who had to timely mount a manetic tape to record data in real time. 
                             There was not enough memory to actually store the information, so data was read on the fly. This added major overhead to data transfers operations.  -->
 
-                            The STELLA project connected CERN, the Centro Nazionale Universitario di Calcolo Elettronico (Pisa, Italy), the Rutherford Laboratory (UK), the DESY physics laboratory (Hamburg), University College (Dublin, Ireland) and the Technical University (Graz, Austria) via ESA’s OTS satellite. CERN physics data (on magnetic tapes) were sent at 1Mbit/sec simultaneously to all active sites. Successful transfer of data was dependent on operators at the receiving endpoints, who had to timely mount magnetic tapes to record the data in real time. There was not enough disk or memory space to store the information, so data was written on tape on the fly. This added major overhead to data transfer operations. So in the final phase of the project, the system was used to inter-connect computer networks between some of the remote sites using a specially designed internet protocol.
+                            The STELLA project connected CERN, the Centro Nazionale Universitario di Calcolo Elettronico (Pisa, Italy), the Rutherford Laboratory (UK), the DESY physics laboratory (Hamburg), University College (Dublin, Ireland) and the Technical University (Graz, Austria) via ESA’s OTS satellite. 
+                            CERN physics data (on magnetic tapes) were sent at 1Mbit/sec simultaneously to all active sites. 
+                            Successful transfer of data was dependent on operators at the receiving endpoints, who had to timely mount magnetic tapes to record the data in real time. 
+                            There was not enough disk or memory space to store the information, so data was written on tape on the fly. This added major overhead to data transfer operations. 
+                            So in the final phase of the project, the system was used to inter-connect computer networks between some of the remote sites using a specially designed internet protocol.
 
+                            In the picture, Ben Segal, right, shows the STELLA satellite dish to Mervyn Hine, leader of this pre-internet project, on the roof of the CERN Computer Centre. 
+                            The system needed special permission from the Swiss PTT to transmit as well as receive data.
 
                             <!-- http://cds.cern.ch/record/1835799 -->
                         </p>
@@ -209,8 +222,21 @@ Ethernet then evolved from using shared coaxial cables to using switched twisted
 
                         <div class="clickable" data-image=" images\networking\clessidra.jpg">
                             <a href="#"><p><u>IP/TCP protocols</u></p></a>
-                        <p> The TCP/IP protocols were progressively introduced within CERN from 1984 to allow the connection of the many different computer systems on the site. Ben Segal was the “TCP/IP Coordinator” until 1989 when TCP/IP was officially adopted and CERN was allowed to connect to the external Internet.
-                              </p>
+                        <p> The TCP/IP protocols were progressively introduced within CERN from 1984 to allow the connection of the many different computer systems on the site. 
+                            Ben Segal was the “TCP/IP Coordinator” until 1989 when TCP/IP was officially adopted and CERN was allowed to connect to the external Internet.
+                            The TCP/IP protocol was invented in 1974 by Vint Cerf and Bob Kahn to replace ARPANET's Network Control Protocol (NCP) 
+                                and was designed to transfer information over interconnected networks, leading to today’s Internet, a global network of networks.
+
+The TCP/IP protocol suite facilitated the development of other protocols and applications that run on top of it, such as the Domain Name System (DNS), 
+the Hypertext Transfer Protocol (HTTP), and the Simple Mail Transfer Protocol (SMTP). 
+In general, four layers constitute the Internet technology: 
+the physical layer (eg Ethernet, token ring, phone networks,  
+the network layer (IP protocol routes the packets across different networks/ IP addresses), 
+the data correction layer (TCP or UDP protocols ensure reliable - error corrected - or fast data transmission, respectively) 
+and the application layer (user applications, such as web browsers and email clients, communicate with each other). 
+The network and correction layers are the most critical ones, as the hour glass analogy represents.
+
+                        </p>
                         </div>
 
 
@@ -228,6 +254,10 @@ This Cisco MGS router was probably the first Cisco router in Europe.
 It had IP filtering capabilities which helped to protect CERN’s CRAY mainframes from unauthorised communications to or from other networks. 
 It became redundant with the end of life of the CRAY, but it is today a priceless treasure. Nowadays, the most modern routers are these Juniper routers, that transmit
 information 100,000 times faster than the first Cisco router.
+
+<!-- He had met Len Bosack at a computer exhibition in the USA in 1985 and saw the Cisco router there for the first time. 
+                            He recalled this in 1986 when the Cray project was being planned at CERN. But purchasing US equipment was not easy at that time -->
+
 
 
                         <!-- At CERN, the first widely used Local Area Network (LAN) was the 12 Mbit/s token ring
@@ -274,11 +304,21 @@ information 100,000 times faster than the first Cisco router.
                             In the beginning, he struggled to convince CERN scientists and management that the Web was a useful solution to information sharing (<i>"Friends at CERN gave me a hard time, 
                             saying it would never take off - especially since it yielded an acronym that was nine syllables long when spoken. Nonetheless, I decided to forge ahead. 
                             I would call my system the "World Wide Web"</i> - T.B.L.). 
-                            It all came together when he finished coding the Web, copmrised of a browser (the client), a server, a naming scheme (URL), a hypertext markup scheme (HTML), and a transport protocol (HTTP) on Christmas day, the 25th December 1990. 
+                            It all came together when he finished coding the Web, copmrised of a browser (the client), a server, a naming scheme (URL) - the REAL invention according to R. Cailliau - , a hypertext markup scheme (HTML), and a transport protocol (HTTP) on Christmas day, the 25th December 1990. 
+                            
+                            
                             He coded it in objective C on his NeXT (founded by Steve Jobs) machine (<i>"The NeXT interface was beautiful, smooth, and consistent. It had great flexibility [...]. Its failure to take over the industry, despite all these advantages, 
                             became for me a cautionary tale. NeXT required users to accept all these innovations at once -- too much."</i> T.B.L.). The very first website in the world was <i>info.cern.ch</i>. 
                             In 1992, Tim put the Web's specifications on USEnet, a global network of software developers; everyone soon realised the innovation that the invention would apport to society, 
                             and actively engaged in its development, which happened in a real grass-roots fashion. 
+
+                            The Web was immediately open source, "CERN relinquishes all intellectual property rights to this code, both source and binary and permission is given to anyone to use, duplicate, modify and distribute it.". 
+                            The statement allowed anyone to claim ownership of the Web, making CERN vulnerable. 
+                            These were years of raising awareness on the importance of software ownership, initially instigated by Richard Stallman (Free Software Foundation, GNU General Public Licence). 
+                            François Fluckiger evaluated various options with CERN’s legal service and decided to release the new version as Open Source – CERN would retain the copyright to protect the 
+                            software from appropriation as well as to secure attribution, but would grant to anyone the perpetual and irrevocable right to use and modify it, freely and at no cost.
+                            
+
                             In 1993, the MOSAIC project (Mozilla, Firefox nowadays) developed a version of the Web that was running on any PC, while Tim's Web was only running on NeXT machines. 
                             With MOSAIC, the whole world understood the potential of the WWW. 
                             In 1994, Tim left for MIT and the Web development was moved to the W3C (World Wide Web Consortium) with the US part in Boston. The EU part, expected to be at CERN, was moved to INRIA in Grenoble. 
@@ -340,77 +380,6 @@ information 100,000 times faster than the first Cisco router.
                 </div>
                 
             
-                <div class="column">
-                    <h1>INTERVIEWS</h1>
-                    <div class="year-name">
-
-                        <div><p>Pier Giorgio Innocenti talking about the data journey. </p></div>  
-                        <div><p>Rene Brun. When a message arrived, an alarm would go off and the line printer would print a histogram, which took a whole page. </p></div>
-                        <div><p>
-                            P. G. Innocenti. 
-
-                           </p></div>
-                        <div><p>Ben Segal: I was able to emulate a human operator - using space gleaned from poor original code
-                         I had to manage everything alone… room layouts, operators, etc…</p></div> 
-
-                           <div><p>
-                            P. G. Innocenti on the computer network between mini-computers to control and measure every SPS accelerator function. 
-                            A Message Hanling Computer was placed in the middle of a star network of Norsk Data NORD-10 computers. 
-                            The software had commands that were predecessors of the Remote Procedure Calls, a communication system between a client and a server. 
-                            Norsk Data was a Norwegian start-up funded by Rolf Skar, with the partecipation of Tor Lingjaerde, who worked at CERN in the Data Division.
-                            Norsk Data provided CERN with multiple mini-computers, at the time very performant. 
-                            
-                            James Gillies on what packet switching is, and how it was invented in the US by Baran and in the UK by Davies at the same time and for different purposes. 
-                            
-                           </p></div>
-                           <div><p>
-                            Ben talks about modems. </p></div>
-
-                            <div><p>
-                            Gerard? Maryse De Costa speaking about him.  </p></div>
-
-                        <div><p>Ben Segal, right, shows the STELLA satellite dish to Mervyn Hine, leader of this pre-internet project, on the roof of the CERN Computer Centre. 
-                            The system needed special permission from the Swiss PTT to transmit as well as receive data. </p></div>
-                            <div><p> Maryse de Costa talking about scientists had to open the tap and get their dose of internet  this is why they are called avmpire taps. </p></div>
-                            <div><p>Ben Segal on IP/TCP. 
-                                The TCP/IP protocol was invented in 1974 by Vint Cerf and Bob Kahn to replace ARPANET's Network Control Protocol (NCP) 
-                                and was designed to transfer information over interconnected networks, leading to today’s Internet, a global network of networks.
-
-The TCP/IP protocol suite facilitated the development of other protocols and applications that run on top of it, such as the Domain Name System (DNS), 
-the Hypertext Transfer Protocol (HTTP), and the Simple Mail Transfer Protocol (SMTP). 
-In general, four layers constitute the Internet technology: 
-the physical layer (eg Ethernet, token ring, phone networks,  
-the network layer (IP protocol routes the packets across different networks/ IP addresses), 
-the data correction layer (TCP or UDP protocols ensure reliable - error corrected - or fast data transmission, respectively) 
-and the application layer (user applications, such as web browsers and email clients, communicate with each other). 
-The network and correction layers are the most critical ones, as the hour glass analogy represents.
-
-
-                            </p></div>
-                            <div><p>
-
-                            Ben Segal talks about the advantages of the router and how he bought it from the USA. He had met Len Bosack at a computer exhibition in the USA in 1985 and saw the Cisco router there for the first time. 
-                            He recalled this in 1986 when the Cray project was being planned at CERN. But purchasing US equipment was not easy at that time… 
-                         </p></div>
-                       <div><p>Robert Cailliau who asks the question: what IS the actual invetion of the Web? It was not hyptertext, not html, but the concept of having a URL. 
-                        He also talkes about the release of the software in the public domain on May 1993, showing the document. 
-                        James Gillies on the WWW.
-                            The Web was immediately open source, "CERN relinquishes all intellectual property rights to this code, both source and binary and permission is given to anyone to use, duplicate, modify and distribute it.". 
-                            The statement allowed anyone to claim ownership of the Web, making CERN vulnerable. 
-                            These were years of raising awareness on the importance of software ownership, initially instigated by Richard Stallman (Free Software Foundation, GNU General Public Licence). 
-                            François Fluckiger evaluated various options with CERN’s legal service and decided to release the new version as Open Source – CERN would retain the copyright to protect the 
-                            software from appropriation as well as to secure attribution, but would grant to anyone the perpetual and irrevocable right to use and modify it, freely and at no cost.
-                            
-                         </p></div>
-                        <div><p>Edoardo Martinelli explains how the CIXP is still nowadays functional, and walks us through the internet journey, from the backbone in b513, to the router, to the 
-                            switch, that distributes it in all the offices.  </p></div>
-                        <div><p>Network cards - internet speed and data transfers, Mihai Patrasciu from FTS?</p></div>
-                        <div><p>Fibre optics - history - Markus? </p></div>
-                        <div><p>Simone Campana, Dirk Duellmann</p></div>
-                        <div><p>Tony Cass on Wi-fi, as he installed it. How does it work? </p></div>
-
-                    </div>
-                </div>
             </div>
         </div>
         

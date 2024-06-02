@@ -369,7 +369,7 @@ header {
     width: 10%; /* Larghezza fissa di 300px per la quinta colonna */
 }
 .column:nth-child(2) {
-    width: 60%; /* Larghezza fissa di 300px per la quinta colonna */
+    width: 80%; /* Larghezza fissa di 300px per la quinta colonna */
 }
 .column:nth-child(3) {
     width: 30%; /* Larghezza fissa di 300px per la quinta colonna */
