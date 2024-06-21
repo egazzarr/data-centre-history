@@ -261,15 +261,15 @@ img {
 }
 
 .content1 h1 {
-    font-size: 13pt;
+    font-size: 11pt;
     font-weight: lighter;
     letter-spacing: 5px;
     color: hsl(0, 0%, 0%);
 }
 .content1 h2 {
-    font-size: 11pt;
+    font-size: 9pt;
     font-weight: lighter;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
     color: hwb(226 0% 0%);
 }
