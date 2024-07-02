@@ -59,17 +59,18 @@
                         <!-- amdahl -->
                         <div><p>1988</p></div>
                         <!-- cray -->
+                        <div><p>1970s</p></div>
+                        <!-- mini-computer -->
                         <div><p>1980s</p></div>
                         <!-- emulator -->
                         <div><p>1975</p></div>
-                        <!-- minicomputer -->
+                        <!-- mivrocomputer -->
 
                         <div><p>1971-2024</p></div> 
                         <!-- processors --> 
                         <div><p>1973</p></div> 
                         <!-- touch -->
-                        <div><p>1980s</p></div>
-                        <!-- mini-computer -->
+                       
                         <div><p>1970s-80s</p></div>
                         <!-- printed curcuit  -->
                         <div><p>1982</p></div>
@@ -114,9 +115,12 @@
                         <div class="clickable" data-image="images/computing/ibm360.jpg">
                             <a href="#"><p><u>Mainframe era - Introduction </u></p></a>
                             <p>
-                                Why did CERN need a computer in the first place? It was really initially just to scan the bubble chambers' pictures and automatise the recoridng of relevant physics events. 
+                                Why did CERN need a computer in the first place? 
+                                Since the early days, computers were built to read out electronically the measurement of the films containing interesting physics events. 
+                                The first recorded data was coming from bubble chambers experiment. 
                                 Bubble chambers are tanks of unstable (superheated) transparent liquid, sensitive to the passage of charged particles through it. 
                                 As they force their way through the liquid, charged particles ionise the atoms in the liquid and they make it boil, leaving bubbling traces. 
+                                
 
                                 Until the 90s, most of the  Data Centre was filled with a few large mainframe computers, which was in charge of running all of the physics and engineering workloads of CERN. 
                                 
@@ -134,11 +138,15 @@
         
                                 By the 70s, computers of various kinds spread at CERN. 
                                 Mainframe computers started to communicate with each other, but also with smaller minicomputers through the CERNET network. 
-                                By 1974, 150 computers of various sizes are reported to be installed on CERN campus. 
-                                - small mini-computers (PDP8, HP2115A) 
-                                - larger mini's and control computers (PDP11/45, HP4100, Nord-10, IBM1800, Modular One, Ferranti Argus 500) 
-                                - medium sized computers (PDP-10, IBM-360/44, CII 10070 and CDC 3200)
-                                - large computers (CDC 6600, CDC 7600).
+                                By 1974, 150 computers of various sizes are reported to be installed on CERN campus:
+                                <li>small mini-computers (PDP8, HP2115A) </li>
+                                    <li>larger mini's and control computers (PDP11/45, HP4100, Nord-10, IBM1800, Modular One, Ferranti Argus 500)</li> 
+                                        <li>medium sized computers (PDP-10, IBM-360/44, CII 10070 and CDC 3200)</li>
+                                            <li>large computers (CDC 6600, CDC 7600)</li>
+                                
+                                
+                                        </br>    
+                                            
                                 Computing became highly heterogeneous. 
                                
                                 By the 80s, mainframes were part of an even bigger network of hundreds of shared computers and thousands of powerful, single-user workstations. 
@@ -148,7 +156,7 @@
                         </div>
 
                         
-                        <div class="clickable" data-image="images/computing/tube.jpg, images/computing/pentode.png, images/computing/ferranti.jpeg, images/computing/vacuum.jpg, images/computing/deuce.jpg, images\computing\innocenti-heavyliquid.jpg">
+                        <div class="clickable" data-image="images/computing/ferranti.PNG, images/computing/tube.jpg, images/computing/pentode.png, images/computing/ferranti.jpeg, images/computing/vacuum.jpg, images/computing/DATA_JOURNEY.jpg">
                             <a href="#"><p><u>Mainframe computers - Ferranti Mercury</u></p></a>
                             <p>
                                 <i>"It took 6 days for God to build the universe, and a little over two years for the Ferranti engineers to produce our Mercury, an assembly of complex circuitry hidden inside
@@ -160,15 +168,32 @@
                                 The Ferranti Mercury worked on the principle of vacuum tubes, ampoules with an anode (positive) and a cathode (negative). 
                                 When powered with current, heat makes electron flow from anode to cathode, carrying and amplifying the signals through a gate in the middle (anode, cathode and gate contitute what was called a triode).  
                                 The Ferranti Mercury had several thousand vacuum tubes - every day, some of them broke and needed to be changed by an operator. 
+
+                                As can be seen in the diagram, the physics data journey, similar to nowadays, consisted in:
+                                <li>Receiving the analogue data from the detector, </li>
+                                <li>Analogue to digital converter (ADC): digitalising the data, transforming the signal from analogue to digital. </li>
+                                <li>in parallel, passing the data through the trigger. The trigger filters the data and decides what we keep and what we discard. This is the part that has evolved the most throughout the years. Initially, the trigger was NOT at all a computer, but a bundle of cables that performed really basic operations like AND and NOT gates. At the end of the 70s, it was replaced by mini-computers.</li>
+                                <li>Data acquisition (DAQ) of the signal. In general, we only look at a small portion of the data, especially in the past, as the computers were not fast enough to process all of the data.</li>
+                                <li>Write on tapes.</li>
+                                <li>Transport of data to Data Centre. In chronological order: FOCUS, Bicycle onLine, RIOS, OMNET, CERNET, Internet. </li>
+                                <li>Full event processing in the Data Centre. </li>
+                                </br>
+                            When possible, physicists wanted to work online from the earliest days. 
+                            Already in 1964, spark sound chamber analysis programs were developed using a SDS 920 <a href="http://cds.cern.ch/record/1242404/files/p211.pdf">a computer adapter</a> online to the Ferranti Mercury. 
+
+
+
                                 <!-- The first vacuum tubes computer was designed in 1926 in Germany with the purpose of tax avoidance; in fact, 
                                 radio receivers had a tax that was levied depending on how many tube holders a radio receiver had. This solution allowed 
                                 radio receivers to have a single tube holder. -->
+
+                                <!-- https://slideplayer.com/slide/12414425/ -->
                             </p>
                         </div>
 
-                        <div class="clickable" data-image="images\computing\ibm3090.png,  images/computing/DSCF8729.jpg ,images/computing/DSCF8733.jpg ,
+                        <div class="clickable" data-image="images/computing/ibm709_panel.jpg, images/computing/ibm360.jpg ,images\computing\ibm3090.png,  images/computing/DSCF8729.jpg ,images/computing/DSCF8733.jpg ,
                         images/computing/DSCF8736.jpg, images/computing/tcm.png, 
-                         images\computing\scanning.png, , images\computing\info2.png , images\computing\info0.JPG , images\computing\info1.jpg, images/computing/ibm360.jpg , images/computing/ibm790onair.jpg, images/computing/ibm3090.jpg,images/computing/ibmscan.jpg,  images/computing/scanning.jpg, images\computing\scanning2.jpg, images\computing\bebc3.jpg, images/computing/bebc1.jpg, images/computing/bebc2.jpg, images/computing/bubbles.jpg, images/computing/ibm709.jpg ">
+                         images\computing\scanning.png, , images\computing\info2.png , images\computing\info0.JPG , images\computing\info1.jpg,  images/computing/ibm790onair.jpg, images/computing/ibm3090.jpg,images/computing/ibmscan.jpg,  images/computing/scanning.jpg, images\computing\scanning2.jpg, images\computing\bebc3.jpg, images/computing/bebc1.jpg, images/computing/bebc2.jpg, images/computing/bubbles.jpg, images/computing/ibm709.jpg ">
                             <a href="#"><p><u>Mainframe computers - IBM</u></p></a>
                             <p>
                                 
@@ -205,7 +230,7 @@
                                 </div>
 
 
-                        <div class="clickable" data-image=" images/computing/cdc-1973.png, images/computing/cdc7600_suercomputer.jpg,images/computing/cdc6600_1.jpg ,images/computing/cdc6600_2.jpg ,images/computing/cdc6600_3.jpg ,images/computing/cdc6600_4.jpg ,images/computing/cdc2.jpg , images/computing/cdc6.jpg,images/computing/cdc7600_1.jpg ,images/computing/cdc7600_2.jpg ,images/computing/cdc7600_3.jpg ,images/computing/cdc7600_4.jpg ,images/computing/cdc7600_5.jpg, images/computing/vt_vs_transistors.png">
+                        <div class="clickable" data-image="images/computing/cdc.jpg, images/computing/cdc0.jpg, images/computing/cdc-1973.png, images/computing/cdc7600_suercomputer.jpg,images/computing/cdc6600_1.jpg ,images/computing/cdc6600_2.jpg ,images/computing/cdc6600_3.jpg ,images/computing/cdc6600_4.jpg ,images/computing/cdc2.jpg , images/computing/cdc6.jpg,images/computing/cdc7600_1.jpg ,images/computing/cdc7600_2.jpg ,images/computing/cdc7600_3.jpg ,images/computing/cdc7600_4.jpg ,images/computing/cdc7600_5.jpg, images/computing/vt_vs_transistors.png">
                             <a href="#"><p><u>Mainframe computers - CDC</u></p></a>
                             <p>
                                 With the advent of the CDC 6600 (1965) the process of scanning and sending bubble chamber tracks to the mainframe was automated for the first time. 
@@ -215,7 +240,7 @@
                                 Here, a cordwood module from the CDC 6600, containing 64 silicon transistors.  
                                 Resistors seem to be stacked like cord between the two circuit boards in order to obtain a high density.
                                 The second object, a black module with its corresponding plate, composed the later CDC 7600 (1972) mainframe, which provided the bulk of the computing power needed by CERN for almost 12 years 
-                                and it was 5 times faster than its predecessor. During its lifetime, it processed a totak of 66813788 jobs and delivered 61321 cpu hours. 
+                                and it was 5 times faster than its predecessor. During its lifetime, it processed a total of 66813788 jobs and delivered 61321 cpu hours. 
                                 No system has ever lasted so long since then.
 
                                  The stories by the engineers who later decided to emulate the mainframes to reduce their cost tell us that, while the 
@@ -281,15 +306,48 @@ Amdahl, an IBM competitor, invented an air cooling technology for its computers,
 
 </div>
 
+<div class="clickable" data-image="images/computing/pdp10.jpg , images/computing/DSCF8727.jpg, images/computing/nord-10.PNG, images\computing\norsk-data.jpg, images\computing\nd2.JPG , images\computing\nd.JPG, , images/computing/adam_eve2.jpg , images/computing/adam_eve.jpg , images/computing/cdc_console1.jpg , images/computing/magnetic film.jpg , images/computing/cdc_console.jpg">
+    <a href="#"><p><u>Mini-computers</u></p></a>
+<p>
+    CERN bought the first transistorised mini-computer in 1964 (SDS 920), to be used on-line with acoustic spark chamber experiments. 
+    The mini-computers were not that mini, they actually were very large and tall. 
+    
+    The mini-computers were the first to allow <a href="http://cds.cern.ch/record/862913?ln=e">online computing</a> in all the control rooms of experiments, 
+    digitalisig the signals while they were taken. Although the first examples of online computing arrived already with the Ferranti Mercury (see Ferranti Mercury section), they 
+    became an unmissable step of analyses when mini-computers were introduced at the trigger level. 
+    Each trigger component was equivalent to a TV; at the time, processing and storing 5 million of TV data in series was a crazy concept. 
+    
+    Already in 1971, a project to scan and measure the photographs of the Mirabelle liquid-hydrogen bubble chamber was starting, called Adam and Eve. 
+    The mini-computer PDP8/L can be seen on the left, with its control electronics and Adolfo fucci and colleagues manipulating it. 
+    The use of mini-computers went hand in hand with the mainframes; as you can see in the pictures, there is a CDC mainframe next to the PDP. 
+
+
+    Mini-computers really invaded CERN at  VAXes and PDP invaded CERN; by the 80s, all the experiments' control rooms had been 'VAXinated'. 
+    The name "VAX" comes from an acronym for "Virtual address eXtension", as the successor to the PDP-11.
+
+    A very well known mini-computers manufacturer was the Norwegian Norsk Data compnay, who built the world's first on-ship computer to automate onboard tasks already in 1969. 
+    It was sturdy, with a thick metal layer protecting it, and it stood cargo boat conditions. 
+    Here, a picture of Raymond Raush standing in front of 2 Nord-10s, used for the SPS controls. 
+    Also some terminal monitors from the same manufacturer.  
+    When somebody expressed the concert the Norwegian company could go burst and asked people in the control rooms what they would do if this happened, 
+    the reply was: "we would hire all of their employees!", as they were one of th emost educated crews of computer operator and engineers at the time. 
+<!-- The first commercially available 32-bit computer was manufactured by Digital Equipment Corporation (DEC).  -->
+    </p>
+</div>
+
+
+
                         <div class="clickable" data-image=" images\computing\3081E-0.JPG , images\computing\3081E-1.JPG , images\computing\3081E-2.JPG , images\computing\3081E-3.JPG, , images\computing\3081E-4.JPG ,images/computing/emulator.jpg , images/computing/DSCF8603.jpg ,images/computing/DSCF8606.jpg ,images/computing/DSCF8607.jpg ,images/computing/DSCF8613.jpg, , images\computing\ua1-team.jpg">
                             <a href="#"><p><u>Emulators</u></p></a>
                         <p>
                             Mainframe computers were expensive (from $2 to $5 million at the time), so many engineers designed home-made integrated circuits to make them more performant than microprocessors on the market. 
                             These were called "emlators", as they emulated the functions of a mainframe, and they were 500 cheaper (one would cost around $10k at the time).
                             
-                            Emulators were employed to pioneer the development of online event selection. 
-                            Notably, Adolfo Fucci and his team were building emulators like this 3081/E from 1983. There were 14 of them in the Data Centre, and 6 in the UA1 control room.
-                            As an example, using the predecessor of the 3081/E, the 168/E, the UA1 experiment was able to select on the fly only the “best” 10% of the events at the trigger level (the so-called express line);
+                            Emulators were employed to pioneer the development of online event selection. They were basically replacing what was initially done in the Data Centre: 
+                            fitting the experimental event to physics theory, analysing the data on the fly.
+                            Notably, Adolfo Fucci, Mick Storr, Sergio Cittolin and the other members of the UA1 experiment (in the picture) were building emulators like this 3081/E from 1983. 
+                            There were 14 of them in the Data Centre, and 6 in the UA1 control room.
+                            Using the predecessor of the 3081/E, the <a href=" https://cds.cern.ch/record/2626526/files/delphi-82-42_ocr.pdf">168/E</a>, the UA1 experiment was able to select on the fly only the “best” 10% of the events at the trigger level (the so-called express line);
                             
                             this set-up led to the selection of the W and Z bosons, carriers of the weak interaction, for which Carlo Rubbia won the Nobel prize for physics. 
                             The concept of filtering only the best events (High Level Trigger) is still in vogue nowadays at CERN, with a very little percentage of events actually ending up in storage. 
@@ -301,9 +359,9 @@ Amdahl, an IBM competitor, invented an air cooling technology for its computers,
                             The boards were sometimes wired up processor boards, like the one on the side. 
                             Transistors were mounted on board with pins, and connected between each other with copper wires. 
                             The design was made on a computer and the computer program figured out the best way to thread the wires. 
-                            Each transistor carries one bit of information.s
+                            Each transistor carries one bit of information.
+                            At the end of the 70s, multiple integrated circuits were used to build emulators. 
 
-                            In the picture, Adolfo Fucci, Mick Storr, Sergio Cittolin as members of the UA1 experiment. 
                             </p>
                         </div>
                         <!-- http://cds.cern.ch/record/1831923 -->
@@ -383,7 +441,7 @@ By joining many transistors for specific functions together with resistors and c
                             </p>
                         </div>
 
-                        <div class="clickable" data-image="images\computing\ts02.JPG , images\computing\touch screen diagram.jpg,  images\computing\ts03.JPG , images\computing\ts01.JPG, images\computing\ts2.jpg ,  images\computing\ts3.jpg , images\computing\ts1.jpg , images\computing\ts4.jpg, images/computing/ben strumpe.jpg ,images/computing/benstrumpe_1.jpg">
+                        <div class="clickable" data-image="images\computing\ts2.jpg , images\computing\ts4.jpg,  images\computing\ts03.JPG , images\computing\ts3.jpg ,images/computing/ben strumpe.jpg, images/computing/benstrumpe_1.jpg,  images\computing\ts01.JPG, images\computing\ts02.JPG ,images\computing\touch screen diagram.jpg,  images\computing\ts1.jpg  ,images/computing/hm.jpg">
                             <a href="#"><p><u>Capacitative touch screen and mouse ball</u></p></a>
                         <p>
                             An important technological invention that revolutionised the way we interact with computers and with smartphones appeared in the SPS control rooms at CERN as early as 1973. 
@@ -391,16 +449,25 @@ By joining many transistors for specific functions together with resistors and c
                             To create the signal, instead of soldering extremely small capacitors on the the printed circuits, which was very time consuming, he thought a finger could be used to complete the circuit and generate a signal. 
                             He made a few attempts to prevent the finger-screen connection to short circuit due to the incorrect dielectric material between the two capacitative screens (our fingers are mostly made of water and therefore conductive),
                              and in a few months he came up with a <a href="https://cds.cern.ch/record/186242/files/CERN-73-06.pdf?version=1">proposal</a>. 
-                             The proposal was also inclusive of a computer controlled knob to navigate easily on the screen; he sent a request to buy some bowling balls to the confused and baffled administration and built a system that
-                             would track and decompose the ball's movements on a 2D plane underneath it. 
-
-                 
+                             The proposal was also inclusive of a computer controlled knob to navigate easily on the screen; he sent a request to buy some bowling balls to the confused and baffled CERN administration. 
+                             He was envisioning a system to track the cursor on the operators' screens in the SPS control room.
+                             A ball would be embedded in the operator’ desk and placed on a plane; its movements would be detected and decomposed in x-y components. 
+                             It is basically the same concept of a modern mouse, with the exception that raster graphics with smooth mouse movements like you know it nowadays only appeared with the 1984 Macintosh. 
+                             Previously, computer graphics were made by displaying characters in a fixed grid which was usually 80 characters wide and 24 lines high. 
+                             The cursor was a blinking rectangle covering one of the 80x24 positions, and not a mouse pointer. 
+                             This meant the operators in the SPS would look at two screens. One was the black and white display behind the touch screen, with 16 fixed buttons displaying tree structure programs. 
+                             
+                            Each touch screen press told the computer program which area the operator had selected, and thus it could display another set of buttons, until finally a button was touched that activated a real program. 
+                            That then took over the second screen, namely the colour screen, where the actual operating program put its information. The blinking rectangle on the coloured screen responded to the knob’s movements. 
                             
+                            In 1977 the touch screen was presented at the Hanover Fair in the form of a “Drinkomat”. Through a multiple choices menu on a touch screen, 
+                            guests were allowed to create their own alcoholic drinks; the completely automated creation of Bloody Marys charmed the impressed crwod. 
+
                             Historically, Eric Johnson already invented the touch screen concept in 1965, but the capacitive technology is the one that allowed touch screens to take over the market. 
                             After a few years, more than 7 billion touch screens were produced. 
                             The father of the "mouse" concept, instead, is Douglas Engelbert; the famous public demonstration in which he 
                             presented it for the first time (1968) was marked in history as <a href="https://www.youtube.com/watch?v=UhpTiWyVa6k&ab_channel=DougEngelbartInstitute">"The Mother of All Demos"</a>. 
-                           
+                       
                            
                             <!-- https://cds.cern.ch/record/917787?ln=fr
                             https://cds.cern.ch/record/969622?ln=fr
@@ -411,26 +478,6 @@ By joining many transistors for specific functions together with resistors and c
                             </p>
                         </div>
 
-
-                        <div class="clickable" data-image="images/computing/pdp10.jpg ,images/computing/DSCF8727.jpg, images\computing\norsk-data.jpg, images\computing\nd2.JPG , images\computing\nd.JPG">
-                            <a href="#"><p><u>Mini-computers</u></p></a>
-                        <p>
-                            CERN bought the first transistorised mini-computer in 1964 (SDS 920), to be used on-line with acoustic spark chamber experiments. 
-                            The mini-computers were not that mini, they actually were very large and tall. 
-                            The first commercially available 32-bit computer, manufactured by Digital Equipment Corporation (DEC). The name "VAX" comes from an acronym for "Virtual address eXtension" as the successor to the PDP-11.
-                            The mini-computers were the first to allow <a href="http://cds.cern.ch/record/862913?ln=e">online computing</a> in all the control rooms of experiments, digitalisig the signals while they were taken. 
-                            P. G. Innocenti explains that actually the first examples of online computing arrived already with the Ferranti Mercury (<a href="http://cds.cern.ch/record/1242404/files/p211.pdf">a computer adapter</a>
-                            digitalised signals from spark sound chamber experiments), but became an unmissable step of analyses with mini-computers, PDP-11 and others.
-                            One component of the trigger was equivalent to a TV: so at the data aquisition moment, it was like using 5 million TVs in series, a crazy concept at the time!
-                            VAXes and PDP invaded CERN; by the 80s, all the experiments' control rooms had been 'VAXinated'. 
-
-                            A very well known mini-computers manufacturer was the Norwegian Norsk Data compnay, who built the world's first on-ship computer to automate onboard tasks already in 1969. 
-                            It was sturdy, with a thick metal layer protecting it, and it stood cargo boat conditions. 
-                            When somebody expressed the concert the Norwegian company could go burst and asked people in the control rooms what they would do if this happened, 
-                            the reply was: "we would hire all of their employees!", as they were one of th emost educated crews of computer operator and engineers at the time. 
-
-                            </p>
-                        </div>
 
                         <div class="clickable" data-image="images/computing/DSCF8619.jpg, images/computing/DSCF8629.jpg, images/computing/DSCF8631.jpg , images/computing/DSCF8632.jpg, images/computing/DSCF8634.jpg, images/computing/DSCF8638.jpg, images/computing/DSCF8574.jpg ,images/computing/DSCF8575.jpg ,images/computing/DSCF8579.jpg ,images/computing/DSCF8581.jpg ,images/computing/DSCF8583.jpg ,images/computing/DSCF8586.jpg ,images/computing/DSCF8587.jpg ,images/computing/DSCF8596.jpg ,images/computing/DSCF8598.jpg ,images/computing/DSCF8600.jpg ,images/computing/DSCF8559.jpg ,images/computing/DSCF8561.jpg, images/computing/doping.png">
                             
@@ -464,7 +511,7 @@ By joining many transistors for specific functions together with resistors and c
                             </p>
                         </div>
 
-                        <div class="clickable" data-image="images/computing/apollo2.jpg ,images/computing/apollo1.jpg, images\computing\apollo.png, images\computing\BBD9EF21-E7B4-46A6-94CF-A7922FA5FCE4.jpg, , images\computing\root1.jpg , images\computing\root2.jpg , images\computing\geant.jpg, images\computing\0E6B63AD-AEEE-4380-9269-00BE61102AB8.jpg, images\computing\61C4734B-E6C6-4A19-BEE3-3A8B945A3688.jpg">
+                        <div class="clickable" data-image="images/computing/apollo2.jpg ,images/computing/apollo1.jpg, images\computing\apollo.png, images\computing\BBD9EF21-E7B4-46A6-94CF-A7922FA5FCE4.jpg, , images\computing\root1.jpg , images\computing\root2.jpg , images\computing\geant.jpg, images\computing\0E6B63AD-AEEE-4380-9269-00BE61102AB8.jpg, images\computing\61C4734B-E6C6-4A19-BEE3-3A8B945A3688.jpg, images/computing/hbook_onscreen.PNG, images/computing/paw_brun.PNG">
                             <a href="#"><p><u>Apollo workstations</u></p></a>
                         <p>
                             The first modern Personal Work Stations were purchased by CERN in 1982 for their high-resolution graphics, but scientists and computer scientists soon realised they were highly performant to parallelise
@@ -479,7 +526,7 @@ By joining many transistors for specific functions together with resistors and c
                             ROOT, based on C++, allows to read data in chunks and modularly, and massively speeds up the anlaysis.
                              The name ROOT comes from the fact that Rene had a beautiful tree outside of his office window in the quiet Prevessin campus. 
                             
-                             Rene Brun (in the pictures!) tells us that in programming for physics 3 kinds of software are generally needed: simulation, recontruction, analysis. 
+                             Rene Brun (in the pictures: sitting in front of an Apollo workstation and presenting PAW at CHEP 1989 in Oxford) tells us that in programming for physics 3 kinds of software are generally needed: simulation, recontruction, analysis. 
                             
                              <!-- https://cds.cern.ch/record/970059
                             https://cds.cern.ch/record/969332?ln=en -->
@@ -516,7 +563,7 @@ By joining many transistors for specific functions together with resistors and c
                             </p>
                         </div>
 
-                        <div class="clickable" data-image=" images/computing/farms2.jpg ,, images\computing\sun.JPG, images/computing/farms.jpg, ">
+                        <div class="clickable" data-image=" images/computing/farms2.jpg , images/computing/sun.png, images\computing\sun.JPG, images/computing/farms.jpg, ">
                             <a href="#"><p><u>PC fams</u></p></a>
                         <p>
                             With the introduction of Linux, PC technology could replace the more expensive proprietary Unix boxes, which allowed SHIFT to expand to the present computer centre. 
@@ -527,6 +574,7 @@ By joining many transistors for specific functions together with resistors and c
                             Sergio Cittolin tells us the story of CERN needing increasingly more computational power, and 
                             how crazy it sounded at the time: when planning the required power for the LHC, in the beginning the requirement of 10 TFLOPs CPU power seemed unimaginable. 
                             However, when the film Titanic came out in 1996, it was made public that CPU power of 5 TFLOPs was used for the visual effects: it was therefore possible to achieve such power, there was hope. 
+                            On display, a Sun Ultra 30 workstation model from 1995. 
 
 
                             </p>
