@@ -238,13 +238,17 @@ document.addEventListener("DOMContentLoaded", function() {
                     imageElement.src = path;
                     imageElement.alt = "Image";
                     rightBox.appendChild(imageElement);
-                } else if (path.toLowerCase().endsWith('.mp4') || path.toLowerCase().endsWith('.mkv')) {
-                    // Create a video element
-                    const videoElement = document.createElement('video');
-                    videoElement.src = path;
-                    videoElement.controls = true;
-                    rightBox.appendChild(videoElement);
-                }
+                } else if (path.toLowerCase().endsWith('.mp4') || path.toLowerCase().endsWith('.mkv') || path.toLowerCase().endsWith('.mov')) {
+                  const videoElement = document.createElement('video');
+                  
+                  videoElement.src = path;
+                  videoElement.autoplay = true;  // Auto-play the video
+                  videoElement.loop = true;      // Loop the video
+                  videoElement.muted = true;     // Mute the video for auto-play to work
+                  videoElement.controls = false; // Hide controls by default
+              
+                  rightBox.appendChild(videoElement);
+              }
 
                 // Add space between images
                 if (index !== mediaPaths.length - 1) {
